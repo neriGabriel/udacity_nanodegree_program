@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoeUIData"
+            type="com.udacity.shoestore.models.Shoe" />
+        
+        <variable
+            name="shoeListViewModel"
+            type="com.udacity.shoestore.viewmodel.ShoeListViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".ui.detail.ShoeDetailFragment">
+
+        <EditText
+            android:id="@+id/shoe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={shoeUIData.name}"
+            android:hint="@string/shoe_name_label"/>
+
+        <EditText
+            android:id="@+id/shoe_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={shoeUIData.company}"
+            android:hint="@string/shoe_company_label"/>
+
+        <EditText
+            android:id="@+id/shoe_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@={shoeUIData.size}"
+            android:hint="@string/shoe_size_label"/>
+
+        <EditText
+            android:id="@+id/shoe_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={shoeUIData.description}"
+            android:hint="@string/shoe_description_label"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_save_label"
+                android:onClick="@{() -> shoeListViewModel.addShoe(shoeUIData) }"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp"/>
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_cancel_label"
+                android:background="@drawable/button_background"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
