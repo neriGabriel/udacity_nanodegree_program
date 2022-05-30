@@ -2,8 +2,13 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <LinearLayout
 
+    <!-- Simple layout, with only two EditTexts and two buttons where the EdiTexts should be aligned
+        one below the other, however the two buttons should be side by side and below the EditTexts,
+        in this case it still a simple layout where we can use two LinearLayout, one being the parent
+        holder where the items will be aligned one below the other and another one to be the buttons
+        holder where the buttons will be aligned side by side -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.login.LoginFragment"

@@ -11,10 +11,10 @@
     <string name="instruction_detail_label">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue tempor dui ac ullamcorper. Nulla efficitur nisi odio, non aliquet quam accumsan quis. Mauris convallis ex risus, sed suscipit diam suscipit ut.</string>
 
     <string name="shoe_list_label">Shoe list</string>
-    <string name="shoe_name_label">Shoe name</string>
-    <string name="shoe_company_label">Company</string>
-    <string name="shoe_size_label">Size</string>
-    <string name="shoe_description_label">Description</string>
+    <string name="shoe_name_label">Shoe name:</string>
+    <string name="shoe_company_label">Company:</string>
+    <string name="shoe_size_label">Size:</string>
+    <string name="shoe_description_label">Description:</string>
     <string name="shoe_save_label">Save</string>
     <string name="shoe_cancel_label">Cancel</string>
     <string name="logout_label">Logout</string>

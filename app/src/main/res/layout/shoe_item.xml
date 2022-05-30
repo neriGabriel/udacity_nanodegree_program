@@ -8,6 +8,9 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!-- Complex layout, One TextView to be a label and one TextView to be data holder for 4 fields
+        and they should be aligned carefully side by side respectively, so, we can use ConstraintLayout.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
